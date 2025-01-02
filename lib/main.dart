@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/presentation/note_provider.dart';
 import 'package:note_app/presentation/note_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(
     MultiProvider(providers:[
-      
+       ChangeNotifierProvider(create: (_) => NoteProvider()),
     ] , child: const MyApp(),)
   );
 }

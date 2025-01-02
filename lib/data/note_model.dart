@@ -18,8 +18,8 @@ class NoteModel {
       'id': id,
       'title': title,
       'content': content,
-      'createdAt': createdAt,
-      'updatedAt': updatedAt,
+      'createdat': createdAt,
+      'updatedat': updatedAt,
     };
   }
 
@@ -28,8 +28,8 @@ class NoteModel {
       id: map['id'],
       title: map['title'] ?? '',
       content: map['content'] ?? '',
-      createdAt: map['createdAt'] ?? '',
-      updatedAt: map['updatedAt'] ?? '',
+      createdAt: map['createdat'] ?? '',
+      updatedAt: map['updatedat'] ?? '',
     );
   }
 }
