@@ -1,16 +1,16 @@
 class NoteModel {
-  final int? id;
+  final int id;
   final String title;
   final String content;
-  final String? createdAt;
-  final String? updatedAt;
+  final String createdAt;
+  final String updatedAt;
 
   NoteModel({
-    this.id,
+    required this.id,
     required this.title,
     required this.content,
-    this.createdAt,
-    this.updatedAt,
+    required this.createdAt,
+    required this.updatedAt,
   });
 
   Map<String, dynamic> toMap() {

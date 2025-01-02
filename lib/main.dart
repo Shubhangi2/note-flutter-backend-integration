@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white, primaryColor: Colors.white, colorScheme: ColorScheme.fromSeed(seedColor: Colors.white)),
       home: const NoteScreen(),
     );
   }
